@@ -1,0 +1,151 @@
+@import "../utilidades/variables";
+@import "../utilidades/listas.scss";
+
+body { /* Estilo para el body */
+    background-color: $bg-color-body;
+    position: relative;
+    padding-bottom: 88px;
+    min-height: 100vh;
+    .banner-envio { /* Estilo banner pequeño */
+        font-size: 14px;
+        font-weight: bold;
+        background-color:$bg-color-banner;
+        text-align: center;
+        position: relative;
+    }
+    header{ /* Estilos del header */
+        .navbar-nav .nav-link:hover {
+            color:$bg-color-hoover; 
+        }
+    }
+    main {
+        .container-form {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+            margin-top: 90px;
+            padding: 0 20px;
+        }
+          
+        .container-form h2 {
+            margin-bottom: 15px;
+            font-size: 35px;
+        }
+          
+        .container-form p {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+          
+        .container-form a {
+            font-size: 17px;
+            display: inline-block;
+            text-decoration: none;
+            width: 100%;
+            margin-bottom: 15px;
+            color: black;
+            font-weight: 700;
+        }
+          
+        .container-form a i {
+            color: #302606;
+            margin-right: 10px;
+        }
+        .container-form form .campo,
+        .container-form form textarea {
+            width: 100%;
+            padding: 15px 10px;
+            font-size: 16px;
+            border: 1px solid #dbdbdb;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            outline: 0px;
+        }
+        .container-form form textarea {
+            min-height: 140px;
+            max-height: 150px;
+            resize: vertical;
+        }
+        .container-form .btn-enviar {
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            outline: 0px;
+            background: #fee9a6;
+            color: black;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 300ms ease;
+        }
+        .container-form .btn-enviar:hover {
+            background: #fee9a6;
+        }
+    }
+    article { /* Estilo de article - Redes Sociales */
+        .redes {
+            height: auto;
+            background-color:$bg-color-redes;
+            margin: $separador;
+        }
+        .titulos {
+            text-align: center;
+            font-weight: bold;
+        }
+        .lista-redes {
+            text-align: center;
+            padding: auto;
+            margin: auto;
+        }
+        .redes li {
+            display: inline-block;
+        }
+    }
+    section { /* Estilo de section - Medios de pago */  
+        h3 {
+            text-align: center;
+            font-weight: bold; 
+        }
+        .container-pagos {
+           height: 120px; 
+           background-color:$bg-color-mpagos;
+        }
+        .lista-pagos {
+            text-align: center;
+            padding-top: 0px;
+            padding-bottom: 10px;
+        }
+        .container-pagos li {
+            display: inline-block;
+        }
+        .btn-wsp {
+            position: fixed;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            bottom: 30px;
+            right: 30px;
+            background:nth($lista-colores, 1 );
+            color: nth($lista-colores, 2 );
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 1px 10px rgba nth($lista-colores , 3);
+            z-index: 100;
+        }
+        .btn-wsp:hover {
+            text-decoration: none;
+            color:nth($lista-colores, 1 );
+            background:nth($lista-colores, 2 );
+        }
+    }
+    footer {
+       background-color: black;
+       color: white;
+       font-size: bold;
+       padding: 25px;
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+    }
+}

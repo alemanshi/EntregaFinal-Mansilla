@@ -1,0 +1,15 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//IMPORT
+@import "../scss/html/home";
+@import "../scss/html/productos";
+@import "../scss/html/sucursales";
+@import "../scss/html/nosotros";
+@import "../scss/html/contacto";
+
+

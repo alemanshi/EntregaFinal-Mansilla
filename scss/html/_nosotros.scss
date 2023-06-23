@@ -1,0 +1,102 @@
+@import "../utilidades/variables";
+@import "../utilidades/listas.scss";
+@import "../utilidades/extend";
+
+body { /* Estilo para el body */
+    background-color: $bg-color-body;
+    position: relative;
+    padding-bottom: 88px;
+    min-height: 100vh;
+    .banner-envio { /* Estilo banner pequeño */
+        font-size: 14px;
+        font-weight: bold;
+        background-color:$bg-color-banner;
+        text-align: center;
+        position: relative;
+    }
+    header{ /* Estilos del header */
+        .navbar-nav .nav-link:hover {
+            color:$bg-color-hoover; 
+        }
+    }
+    main {
+        .container-frase {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @extend %flex;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            @extend %flex;
+        }
+    }
+    article { /* Estilo de article - Redes Sociales */
+        .redes {
+            height: auto;
+            background-color:$bg-color-redes;
+            margin: $separador;
+        }
+        .titulos {
+            text-align: center;
+            font-weight: bold;
+        }
+        .lista-redes {
+            text-align: center;
+            padding: auto;
+            margin: auto;
+        }
+        .redes li {
+            display: inline-block;
+        }
+    }
+    section { /* Estilo de section - Medios de pago */  
+        h3 {
+            text-align: center;
+            font-weight: bold; 
+        }
+        .container-pagos {
+           height: 120px; 
+           background-color:$bg-color-mpagos;
+        }
+        .lista-pagos {
+            text-align: center;
+            padding-top: 0px;
+            padding-bottom: 10px;
+        }
+        .container-pagos li {
+            display: inline-block;
+        }
+        .btn-wsp {
+            position: fixed;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            bottom: 30px;
+            right: 30px;
+            background:nth($lista-colores, 1 );
+            color: nth($lista-colores, 2 );
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 1px 10px rgba nth($lista-colores , 3);
+            z-index: 100;
+        }
+        .btn-wsp:hover {
+            text-decoration: none;
+            color:nth($lista-colores, 1 );
+            background:nth($lista-colores, 2 );
+        }
+    }
+    footer {
+       background-color: black;
+       color: white;
+       font-size: bold;
+       padding: 25px;
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+    }
+}

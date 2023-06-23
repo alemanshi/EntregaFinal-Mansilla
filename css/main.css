@@ -1,0 +1,471 @@
+@charset "UTF-8";
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  /* Estilo para el body */
+  background-color: #a8ffdd;
+  position: relative;
+  padding-bottom: 88px;
+  min-height: 100vh; }
+  body .banner-envio {
+    /* Estilo banner pequeño */
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fee9a6;
+    text-align: center;
+    position: relative; }
+  body header {
+    /* Estilos del header */ }
+    body header .navbar-nav .nav-link:hover {
+      color: #3fd97f; }
+  body main {
+    /* Estilos del main */
+    width: 90vw;
+    margin: auto;
+    padding-top: 30px 20px; }
+    body main h1, body main h2 {
+      text-align: center;
+      font-weight: bold; }
+    body main #carouselExampleRide .carousel-inner .carousel-item img {
+      max-height: 600px;
+      /* Ajusta la altura máxima de las imágenes */
+      object-fit: contain;
+      /* Ajuste del contenido de la imagen */ }
+  body article {
+    /* Estilo de article - Redes Sociales */ }
+    body article .redes {
+      height: auto;
+      background-color: #ebefc9;
+      margin: 5px; }
+    body article .titulos {
+      text-align: center;
+      font-weight: bold; }
+    body article .lista-redes {
+      text-align: center;
+      padding: auto;
+      margin: auto; }
+    body article .redes li {
+      display: inline-block; }
+  body section {
+    /* Estilo de section - Medios de pago */ }
+    body section h3 {
+      text-align: center;
+      font-weight: bold; }
+    body section .container-pagos {
+      height: 120px;
+      background-color: #ebdfc6; }
+    body section .lista-pagos {
+      text-align: center;
+      padding-top: 0px;
+      padding-bottom: 10px; }
+    body section .container-pagos li {
+      display: inline-block; }
+    body section .btn-wsp {
+      /* Estilo botón de whatsapp */
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      bottom: 30px;
+      right: 30px;
+      background: #0df053;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0px 1px 10px rgba rgba 0, 0, 0, 0.3;
+      z-index: 100; }
+    body section .btn-wsp:hover {
+      text-decoration: none;
+      color: #0df053;
+      background: #fff; }
+  body footer {
+    background-color: black;
+    color: white;
+    font-size: bold;
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+
+body {
+  /* Estilo para el body */
+  background-color: #a8ffdd;
+  position: relative;
+  padding-bottom: 88px;
+  min-height: 100vh; }
+  body .banner-envio {
+    /* Estilo banner pequeño */
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fee9a6;
+    text-align: center;
+    position: relative; }
+  body header {
+    /* Estilos del header */ }
+    body header .navbar-nav .nav-link:hover {
+      color: #3fd97f; }
+  body main .grid-container {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 10px;
+    justify-items: center; }
+  body main .card {
+    width: 18rem;
+    margin-top: 5px;
+    margin-bottom: 10px; }
+  body section {
+    /* Estilo de section - Medios de pago */ }
+    body section h3 {
+      text-align: center;
+      font-weight: bold; }
+    body section .container-pagos {
+      height: 120px;
+      background-color: #ebdfc6; }
+    body section .lista-pagos {
+      text-align: center;
+      padding-top: 0px;
+      padding-bottom: 10px; }
+    body section .container-pagos li {
+      display: inline-block; }
+    body section .btn-wsp {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      bottom: 30px;
+      right: 30px;
+      background: #0df053;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0px 1px 10px rgba rgba 0, 0, 0, 0.3;
+      z-index: 100; }
+    body section .btn-wsp:hover {
+      text-decoration: none;
+      color: #0df053;
+      background: #fff; }
+  body footer {
+    background-color: black;
+    color: white;
+    font-size: bold;
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+
+body {
+  /* Estilo para el body */
+  background-color: #a8ffdd;
+  position: relative;
+  padding-bottom: 88px;
+  min-height: 100vh; }
+  body .banner-envio {
+    /* Estilo banner pequeño */
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fee9a6;
+    text-align: center;
+    position: relative; }
+  body header {
+    /* Estilos del header */ }
+    body header .navbar-nav .nav-link:hover {
+      color: #3fd97f; }
+  body main .parrafos {
+    text-align: center;
+    font-weight: bold; }
+  body main .container-locales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas con tamaño igual */
+    grid-gap: 20px;
+    /* Espacio entre elementos */ }
+  body main .local {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Relación de aspecto 16:9 (9 dividido por 16) */
+    position: relative; }
+  body main .local iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid #000;
+    /* Agrega un borde de 3px */ }
+  body main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  body main ul li {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; }
+  body article {
+    /* Estilo de article - Redes Sociales */ }
+    body article .redes {
+      height: auto;
+      background-color: #ebefc9;
+      margin: 5px; }
+    body article .titulos {
+      text-align: center;
+      font-weight: bold; }
+    body article .lista-redes {
+      text-align: center;
+      padding: auto;
+      margin: auto; }
+    body article .redes li {
+      display: inline-block; }
+  body section {
+    /* Estilo de section - Medios de pago */ }
+    body section h3 {
+      text-align: center;
+      font-weight: bold; }
+    body section .container-pagos {
+      height: 120px;
+      background-color: #ebdfc6; }
+    body section .lista-pagos {
+      text-align: center;
+      padding-top: 0px;
+      padding-bottom: 10px; }
+    body section .container-pagos li {
+      display: inline-block; }
+    body section .btn-wsp {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      bottom: 30px;
+      right: 30px;
+      background: #0df053;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0px 1px 10px rgba rgba 0, 0, 0, 0.3;
+      z-index: 100; }
+    body section .btn-wsp:hover {
+      text-decoration: none;
+      color: #0df053;
+      background: #fff; }
+  body footer {
+    background-color: black;
+    color: white;
+    font-size: bold;
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+
+body main .container-frase, body main .image-container {
+  display: flex; }
+
+body {
+  /* Estilo para el body */
+  background-color: #a8ffdd;
+  position: relative;
+  padding-bottom: 88px;
+  min-height: 100vh; }
+  body .banner-envio {
+    /* Estilo banner pequeño */
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fee9a6;
+    text-align: center;
+    position: relative; }
+  body header {
+    /* Estilos del header */ }
+    body header .navbar-nav .nav-link:hover {
+      color: #3fd97f; }
+  body main .container-frase {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  body main .image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+  body article {
+    /* Estilo de article - Redes Sociales */ }
+    body article .redes {
+      height: auto;
+      background-color: #ebefc9;
+      margin: 5px; }
+    body article .titulos {
+      text-align: center;
+      font-weight: bold; }
+    body article .lista-redes {
+      text-align: center;
+      padding: auto;
+      margin: auto; }
+    body article .redes li {
+      display: inline-block; }
+  body section {
+    /* Estilo de section - Medios de pago */ }
+    body section h3 {
+      text-align: center;
+      font-weight: bold; }
+    body section .container-pagos {
+      height: 120px;
+      background-color: #ebdfc6; }
+    body section .lista-pagos {
+      text-align: center;
+      padding-top: 0px;
+      padding-bottom: 10px; }
+    body section .container-pagos li {
+      display: inline-block; }
+    body section .btn-wsp {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      bottom: 30px;
+      right: 30px;
+      background: #0df053;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0px 1px 10px rgba rgba 0, 0, 0, 0.3;
+      z-index: 100; }
+    body section .btn-wsp:hover {
+      text-decoration: none;
+      color: #0df053;
+      background: #fff; }
+  body footer {
+    background-color: black;
+    color: white;
+    font-size: bold;
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+
+body {
+  /* Estilo para el body */
+  background-color: #a8ffdd;
+  position: relative;
+  padding-bottom: 88px;
+  min-height: 100vh; }
+  body .banner-envio {
+    /* Estilo banner pequeño */
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fee9a6;
+    text-align: center;
+    position: relative; }
+  body header {
+    /* Estilos del header */ }
+    body header .navbar-nav .nav-link:hover {
+      color: #3fd97f; }
+  body main .container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 90px;
+    padding: 0 20px; }
+  body main .container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px; }
+  body main .container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px; }
+  body main .container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700; }
+  body main .container-form a i {
+    color: #302606;
+    margin-right: 10px; }
+  body main .container-form form .campo,
+  body main .container-form form textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px; }
+  body main .container-form form textarea {
+    min-height: 140px;
+    max-height: 150px;
+    resize: vertical; }
+  body main .container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #fee9a6;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease; }
+  body main .container-form .btn-enviar:hover {
+    background: #fee9a6; }
+  body article {
+    /* Estilo de article - Redes Sociales */ }
+    body article .redes {
+      height: auto;
+      background-color: #ebefc9;
+      margin: 5px; }
+    body article .titulos {
+      text-align: center;
+      font-weight: bold; }
+    body article .lista-redes {
+      text-align: center;
+      padding: auto;
+      margin: auto; }
+    body article .redes li {
+      display: inline-block; }
+  body section {
+    /* Estilo de section - Medios de pago */ }
+    body section h3 {
+      text-align: center;
+      font-weight: bold; }
+    body section .container-pagos {
+      height: 120px;
+      background-color: #ebdfc6; }
+    body section .lista-pagos {
+      text-align: center;
+      padding-top: 0px;
+      padding-bottom: 10px; }
+    body section .container-pagos li {
+      display: inline-block; }
+    body section .btn-wsp {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      bottom: 30px;
+      right: 30px;
+      background: #0df053;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0px 1px 10px rgba rgba 0, 0, 0, 0.3;
+      z-index: 100; }
+    body section .btn-wsp:hover {
+      text-decoration: none;
+      color: #0df053;
+      background: #fff; }
+  body footer {
+    background-color: black;
+    color: white;
+    font-size: bold;
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
